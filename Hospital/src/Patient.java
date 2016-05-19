@@ -1,14 +1,17 @@
 
 public class Patient {
 
-	public Object feelsCaredFor() {
-		// TODO Auto-generated method stub
-		return null;
+	boolean pulseChecked = false;
+
+	public boolean feelsCaredFor() {
+
+		return pulseChecked;
 	}
 
 	public void checkPulse() {
-		// TODO Auto-generated method stub
-		
+
+		pulseChecked = true;
+
 	}
 
 }

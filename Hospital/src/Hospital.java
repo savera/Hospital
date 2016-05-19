@@ -5,19 +5,22 @@ public class Hospital {
 
 	List<Doctor> docs = new ArrayList<Doctor>(); 
 	
+	List<Patient> patients = new ArrayList<Patient>();
+	
 	public List<Doctor> getDoctors() {
 		
 		return docs;
 	}
 
 	public void addPatient(Patient patient) {
-		// TODO Auto-generated method stub
+		
+		patients.add(patient);
 		
 	}
 
-	public List<Doctor> getPatients() {
+	public List<Patient> getPatients() {
 		// TODO Auto-generated method stub
-		return null;
+		return patients;
 	}
 
 	public void assignPatientsToDoctors() {
