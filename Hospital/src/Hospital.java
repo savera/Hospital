@@ -19,12 +19,12 @@ public class Hospital {
 	}
 
 	public List<Patient> getPatients() {
-		// TODO Auto-generated method stub
+		
 		return patients;
 	}
 
 	public void assignPatientsToDoctors() {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
@@ -39,7 +39,4 @@ public class Hospital {
 		docs.add(generalPractitioner); 
 		
 	}
-
-	
-
 }

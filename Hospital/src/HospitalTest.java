@@ -1,3 +1,4 @@
+
 // Copyright Wintriss Technical Schools 2013
 import java.util.List;
 
@@ -39,7 +40,7 @@ public class HospitalTest extends TestCase {
 		GeneralPractitioner testGP = new GeneralPractitioner();
 		assertEquals(true, testGP.makesHouseCalls());
 		assertEquals(false, testSurgeon.makesHouseCalls());
-		assertEquals(false, testDoctor.makesHouseCalls()); 
+		assertEquals(false, testDoctor.makesHouseCalls());
 	}
 
 	/* A doctor has a list of patients */
@@ -47,10 +48,10 @@ public class HospitalTest extends TestCase {
 		Doctor testDoctor = new GeneralPractitioner();
 		testDoctor.assignPatient(new Patient());
 		assertEquals(1, testDoctor.getPatients().size());
-		
+
 		testDoctor.assignPatient(new Patient());
 		assertEquals(2, testDoctor.getPatients().size());
-		
+
 		testDoctor.assignPatient(new Patient());
 		assertEquals(3, testDoctor.getPatients().size());
 	}
@@ -59,7 +60,7 @@ public class HospitalTest extends TestCase {
 	public void testCheckPulse() throws Exception {
 		Patient testPatient = new Patient();
 		assertEquals(false, testPatient.feelsCaredFor());
-		
+
 		testPatient.checkPulse();
 		assertEquals(true, testPatient.feelsCaredFor());
 	}
@@ -90,7 +91,7 @@ public class HospitalTest extends TestCase {
 		} catch (DoctorFullException dfe) {
 			assertTrue(true);
 		}
-assertTrue(testDoctor.getPatients().size() == 3);
+		assertTrue(testDoctor.getPatients().size() == 3);
 	}
 
 	public void test8Patients() throws Exception {
@@ -106,7 +107,5 @@ assertTrue(testDoctor.getPatients().size() == 3);
 		assertEquals(3, testDoctors.get(1).getPatients().size());
 		assertEquals(2, testDoctors.get(2).getPatients().size());
 	}
-
-
 
 }

@@ -1,16 +1,16 @@
 
 public class Patient {
 
-	boolean pulseChecked = false;
-
+	public boolean feelsCared = false; 
+	
 	public boolean feelsCaredFor() {
-
-		return pulseChecked;
+		
+		return feelsCared;
 	}
 
 	public void checkPulse() {
 
-		pulseChecked = true;
+		feelsCared = true; 
 
 	}
 
