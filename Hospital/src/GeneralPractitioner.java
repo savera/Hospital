@@ -7,10 +7,12 @@ public class GeneralPractitioner extends Doctor {
 
 	public void doMedicine() {
 
-		Patient pat = new Patient();
-
-		pat.feelsCared = true;
-
+		for(Patient p : patients){
+			
+			p.feelsCared = true; 
+			
+		}
+		
 	}
 
 }

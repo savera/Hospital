@@ -1,7 +1,7 @@
 
 public class Patient {
 
-	public boolean feelsCared = false; 
+	public boolean feelsCared; 
 	
 	public boolean feelsCaredFor() {
 		

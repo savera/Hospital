@@ -1,8 +1,9 @@
 
 public class DoctorFullException extends Exception {
 
-	DoctorFullException(){
+	public DoctorFullException(String s) {
 		
+		super(s); 
 		
 	}
 	

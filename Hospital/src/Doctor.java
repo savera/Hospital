@@ -16,17 +16,13 @@ public class Doctor {
 	}
 
 	public void assignPatient(Patient patient) throws DoctorFullException {
-		
+
 		patients.add(patient);
 
 		if (patients.size() > 3) {
 
-			throw new DoctorFullException();
+			throw new DoctorFullException("Too many patients");
 
-		}else{
-			
-			System.out.println(patients.size());
-			
 		}
 
 	}
@@ -37,10 +33,6 @@ public class Doctor {
 	}
 
 	public void doMedicine() {
-		
-		Patient pat = new Patient();
-
-		pat.feelsCared = true;
 
 	}
 
